@@ -243,7 +243,7 @@
             this.p1_t4.Location = new System.Drawing.Point(27, 81);
             this.p1_t4.Name = "p1_t4";
             this.p1_t4.Size = new System.Drawing.Size(404, 20);
-            this.p1_t4.TabIndex = 4;
+            this.p1_t4.TabIndex = 3;
             // 
             // tableLayoutPanel2
             // 
@@ -471,7 +471,7 @@
             this.p2_r1.Location = new System.Drawing.Point(246, 3);
             this.p2_r1.Name = "p2_r1";
             this.p2_r1.Size = new System.Drawing.Size(185, 20);
-            this.p2_r1.TabIndex = 2;
+            this.p2_r1.TabIndex = 0;
             // 
             // p2_r2
             // 
@@ -480,7 +480,7 @@
             this.p2_r2.Location = new System.Drawing.Point(246, 29);
             this.p2_r2.Name = "p2_r2";
             this.p2_r2.Size = new System.Drawing.Size(185, 20);
-            this.p2_r2.TabIndex = 18;
+            this.p2_r2.TabIndex = 1;
             // 
             // p2_r3
             // 
@@ -489,7 +489,7 @@
             this.p2_r3.Location = new System.Drawing.Point(246, 55);
             this.p2_r3.Name = "p2_r3";
             this.p2_r3.Size = new System.Drawing.Size(185, 20);
-            this.p2_r3.TabIndex = 21;
+            this.p2_r3.TabIndex = 2;
             // 
             // p2_t4
             // 
@@ -498,7 +498,7 @@
             this.p2_t4.Location = new System.Drawing.Point(24, 81);
             this.p2_t4.Name = "p2_t4";
             this.p2_t4.Size = new System.Drawing.Size(206, 20);
-            this.p2_t4.TabIndex = 20;
+            this.p2_t4.TabIndex = 3;
             // 
             // p2_r4
             // 
@@ -507,7 +507,7 @@
             this.p2_r4.Location = new System.Drawing.Point(246, 81);
             this.p2_r4.Name = "p2_r4";
             this.p2_r4.Size = new System.Drawing.Size(185, 20);
-            this.p2_r4.TabIndex = 19;
+            this.p2_r4.TabIndex = 3;
             // 
             // label15
             // 
@@ -526,7 +526,7 @@
             this.p2_t3.Location = new System.Drawing.Point(24, 55);
             this.p2_t3.Name = "p2_t3";
             this.p2_t3.Size = new System.Drawing.Size(206, 20);
-            this.p2_t3.TabIndex = 22;
+            this.p2_t3.TabIndex = 2;
             // 
             // panel_header
             // 
@@ -668,7 +668,7 @@
             // p3
             // 
             this.p3.Controls.Add(tableLayoutPanel2);
-            this.p3.Location = new System.Drawing.Point(39, 588);
+            this.p3.Location = new System.Drawing.Point(36, 543);
             this.p3.Name = "p3";
             this.p3.Size = new System.Drawing.Size(515, 144);
             this.p3.TabIndex = 14;
@@ -676,7 +676,7 @@
             // p2
             // 
             this.p2.Controls.Add(tableLayoutPanel3);
-            this.p2.Location = new System.Drawing.Point(36, 417);
+            this.p2.Location = new System.Drawing.Point(36, 379);
             this.p2.Name = "p2";
             this.p2.Size = new System.Drawing.Size(515, 144);
             this.p2.TabIndex = 19;
@@ -684,7 +684,7 @@
             // button1
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(601, 283);
+            this.button1.Location = new System.Drawing.Point(619, 237);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(144, 76);
             this.button1.TabIndex = 20;
@@ -695,7 +695,7 @@
             // button2
             // 
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(601, 365);
+            this.button2.Location = new System.Drawing.Point(619, 319);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(144, 31);
             this.button2.TabIndex = 21;
@@ -706,9 +706,9 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(424, 44);
+            this.pictureBox1.Location = new System.Drawing.Point(398, 44);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(339, 166);
+            this.pictureBox1.Size = new System.Drawing.Size(365, 166);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
@@ -719,7 +719,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(253)))), ((int)(((byte)(225)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 377);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.p2);

@@ -352,6 +352,7 @@
             this.p1_t4.Name = "p1_t4";
             this.p1_t4.Size = new System.Drawing.Size(334, 79);
             this.p1_t4.TabIndex = 3;
+            this.p1_t4.TabStop = false;
             this.p1_t4.Text = "button4";
             this.p1_t4.UseVisualStyleBackColor = false;
             this.p1_t4.Click += new System.EventHandler(this.p1_t4_Click);
@@ -365,6 +366,7 @@
             this.p1_t3.Name = "p1_t3";
             this.p1_t3.Size = new System.Drawing.Size(334, 79);
             this.p1_t3.TabIndex = 2;
+            this.p1_t3.TabStop = false;
             this.p1_t3.Text = "button3";
             this.p1_t3.UseVisualStyleBackColor = false;
             this.p1_t3.Click += new System.EventHandler(this.p1_t3_Click);
@@ -378,6 +380,7 @@
             this.p1_t2.Name = "p1_t2";
             this.p1_t2.Size = new System.Drawing.Size(334, 79);
             this.p1_t2.TabIndex = 1;
+            this.p1_t2.TabStop = false;
             this.p1_t2.Text = "button2";
             this.p1_t2.UseVisualStyleBackColor = false;
             this.p1_t2.Click += new System.EventHandler(this.p1_t2_Click);
@@ -391,6 +394,7 @@
             this.p1_t1.Name = "p1_t1";
             this.p1_t1.Size = new System.Drawing.Size(334, 79);
             this.p1_t1.TabIndex = 0;
+            this.p1_t1.TabStop = false;
             this.p1_t1.Text = "button1";
             this.p1_t1.UseVisualStyleBackColor = false;
             this.p1_t1.Click += new System.EventHandler(this.p1_t1_Click);
