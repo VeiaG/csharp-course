@@ -82,7 +82,7 @@ namespace Kursova
             StructFile.curTest = 0;
             StructFile.qq = StructFile.T.allT[StructFile.goS];
             Array.Resize(ref StructFile.btest, StructFile.qq.Size);
-            for(int i = 0; i < StructFile.qq.Size-1; i++ )
+            for(int i = 0; i < StructFile.qq.Size; i++ )
             {
                 StructFile.btest[i] = i;
             }
