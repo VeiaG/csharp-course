@@ -16,6 +16,8 @@ namespace ReadWriteBinaryFile
         public static bool Tnew = true;
         public static gt T;
         public static ans[] Answers;
+        //bank 
+        public static int[] btest = new int[0];
         public struct ans
         {
             public int AllM;
@@ -31,6 +33,7 @@ namespace ReadWriteBinaryFile
         {
             public string Name;
             public int Size;
+            public int banksize;
             public Question[] questions;
         }
         void Main()

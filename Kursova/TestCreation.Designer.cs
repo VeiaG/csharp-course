@@ -39,6 +39,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel_header.SuspendLayout();
             this.X.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.XIcon)).BeginInit();
@@ -113,7 +115,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(96, 39);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(680, 20);
+            this.textBox1.Size = new System.Drawing.Size(226, 20);
             this.textBox1.TabIndex = 6;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -158,12 +160,32 @@
             this.button3.Visible = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Location = new System.Drawing.Point(402, 35);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(141, 24);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "К-кість питань";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(550, 38);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(226, 20);
+            this.textBox2.TabIndex = 11;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
             // TestCreation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(253)))), ((int)(((byte)(225)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button2);
@@ -196,6 +218,8 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
 

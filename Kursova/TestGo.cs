@@ -14,6 +14,7 @@ using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using ComboBox = System.Windows.Forms.ComboBox;
+using System.Reflection;
 
 namespace Kursova
 {
@@ -29,13 +30,9 @@ namespace Kursova
             InitializeComponent();
             p2.Location = new Point(p1.Location.X, p1.Location.Y-45);
             p3.Location = p1.Location;
-            
-            if(StructFile.curTest == 0)
-            {
-                StructFile.Answers[StructFile.goS].Mark = 0;
-            }
             RLoad(StructFile.curTest);
-            label2.Text = StructFile.qq.Name;
+             label2.Text = StructFile.qq.Name;  
+            
         }
 
         /* ПАНЕЛЬ */
@@ -67,7 +64,7 @@ namespace Kursova
            
             /*читання */
 
-            sv = StructFile.qq.questions[index];
+            sv = StructFile.qq.questions[StructFile.btest[index]];
 
             /* приколюхи далі */
 
@@ -241,7 +238,7 @@ namespace Kursova
         }
         private void TestEnd()
         {
-            if (StructFile.curTest < StructFile.qq.Size - 1)
+            if (StructFile.curTest < StructFile.qq.banksize - 1)
             {
                 StructFile.curTest++;
                 Close();

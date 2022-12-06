@@ -20,6 +20,7 @@ namespace Kursova
         /*ПАНЕЛЬ*/
         bool drag = false;
         Point start_point = new Point(0, 0);
+
         public StudentCabinet()
         {
 
@@ -49,7 +50,7 @@ namespace Kursova
                 name.Size = new Size(560, 80);
                 name.TextAlign = ContentAlignment.MiddleLeft;
                 // -------------
-                StructFile.Answers[i].AllM = StructFile.T.allT[i].Size;
+                StructFile.Answers[i].AllM = StructFile.T.allT[i].banksize;
                 StructFile.Answers[i].selected = i;
                 Label mark = new Label();
                 mark.Text = StructFile.Answers[i].Mark +"/" +StructFile.Answers[i].AllM;
@@ -72,6 +73,7 @@ namespace Kursova
                 panel.Controls.Add(p);
             }
         }
+
         void g_button_click(object sender , EventArgs e)
         {
             //пройти нажате
@@ -79,7 +81,13 @@ namespace Kursova
             StructFile.goS = int.Parse(btn.Name.Remove(0, 1)) - 1;
             StructFile.curTest = 0;
             StructFile.qq = StructFile.T.allT[StructFile.goS];
-
+            Array.Resize(ref StructFile.btest, StructFile.qq.Size);
+            for(int i = 0; i < StructFile.qq.Size-1; i++ )
+            {
+                StructFile.btest[i] = i;
+            }
+            Shuffle(StructFile.btest);
+            StructFile.Answers[StructFile.goS].Mark = 0;
             Close();
             TestGo t = new TestGo();
             t.Show();
@@ -127,6 +135,17 @@ namespace Kursova
             Login t = new Login();
             t.Show();
             t.Location = this.Location;
+        }
+        private void Shuffle(int[] arr)
+        {
+            Random rnd = new Random();
+            for (int i = arr.Length; i > 1; i--)
+            {
+                int pos = rnd.Next(i);
+                var x = arr[i - 1];
+                arr[i - 1] = arr[pos];
+                arr[pos] = x;
+            }
         }
         /* Кінець панел і*/
     }

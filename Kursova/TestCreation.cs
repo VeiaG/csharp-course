@@ -24,6 +24,7 @@ namespace Kursova
         {
             InitializeComponent();
             textBox1.Text = StructFile.qq.Name;
+            textBox2.Text = StructFile.qq.banksize.ToString();
             if (StructFile.QisSelected)
             {
                 StructFile.QisSelected = false;
@@ -191,6 +192,11 @@ namespace Kursova
             TeacherCabinet t = new TeacherCabinet();
             t.Show();
             t.Location = this.Location;
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            StructFile.qq.banksize = Convert.ToInt32(textBox2.Text);
         }
         /* Кінець панел і*/
     }
